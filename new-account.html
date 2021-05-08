@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="new-account.js"></script>
+</head>
+<body>
+<header class="newAccount-title">
+    <p>New Account</p>
+</header>
+<article class="newAccount-main">
+    <ul class="newAccount-box">
+        <li class="newAccount-id">
+            <span class="newAccount-text">ID</span>
+            <input class="newAccount-idInput" type="text"/>
+            <button class="newAccount-doubleCheck">중복확인</button>
+        </li>
+        <li class="newAccount-pw">
+            <span class="newAccount-text">PW</span>
+            <input class="newAccount-pwInput" type="password"/>
+        </li>
+        <li class="newAccount-name">
+            <span class="newAccount-text">Name</span>
+            <input class="newAccount-nameInput" type="text"/>
+        </li>
+        <li class="newAccount-sex">
+            <span class="newAccount-text">Sex</span>
+            <input class="newAccount-sexInput" type="text"/>
+        </li>
+    </ul>
+    <button class="newAccount-submit">Sign Up</button>
+    <button class="newAccount-back">Back</button>
+    <script>
+        const newAccount = new NewAccount(document.querySelector('.newAccount-main'))
+    </script>
+</article>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./client.js"></script>
+</head>
+<body>
+<section class="main-page">
+    <p class="title">로그인 서비스 ㅎㅎ</p>
+    <div class="id-box">
+        <span>아이디 : </span>
+        <input class="id-value" type="text"/><br>
+    </div>
+    <div class="pw-box">
+        <span>패스워드 : </span>
+        <input class="pw-value" type="password"/>
+    </div>
+    <div class="bt-box">
+        <button class="submit">로그인</button>
+        <button class="new-account">회원가입</button>
+    </div>
+</section>
+<script>
+    const login = new Login(document.querySelector('.main-page'))
+</script>
+</body>
+</html>
